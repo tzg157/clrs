@@ -136,6 +136,27 @@ public class BinarySearchTree<T extends Comparator> {
 
     }
 
+    /**
+     * 左旋一个节点
+     * 假设以r为根节点的右子树非空且树的根节点的父节点为null
+     * step-1：r节点右孩子节点(y节点)的左子树成为r节点的右子树
+     * step-2：y节点的父节点指向x节点的父节点
+     * step-3：y节点的左孩子为r节点，r节点的父节点指向y节点
+     * @param r 待旋转的右节点
+     */
+    public void leftRotate(Node r){
+
+    }
+
+    /**
+     * 右旋一个节点
+     * 与左旋操作相反
+     * @param l 待旋转的左节点
+     */
+    public void rightRotate(Node l){
+
+    }
+
     public static class Node<T>{
         private Node parent;
         private Node left;
